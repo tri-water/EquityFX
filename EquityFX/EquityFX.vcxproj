@@ -122,7 +122,7 @@
     <ClInclude Include="PayOff3.h" />
     <ClInclude Include="PayOffBridge.h" />
     <ClInclude Include="Random2.h" />
-    <ClInclude Include="Wrapper.h" />
+    <ClInclude Include="Wrapper2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AntiThetic.cpp" />

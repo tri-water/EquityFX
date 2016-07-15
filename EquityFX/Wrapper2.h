@@ -27,9 +27,14 @@ public:
 	
 	T& operator=(const Wrapper<T>& original)
 	{
-		if (this != &original) {
-			DataPtr = original.DataPtr != nullptr ? original.DataPtr->clone() : nullptr;
+		if (this != original) {
+			T* newPtr = original->DataPtr != 0 ? original.DataPtr->clone() : 0;
+			if (DataPtr != 0) {
+				delete DataPtr;
+			}
+			DataPtr = newPtr;
 		}
+		
 		
 		return *this;
 	}
